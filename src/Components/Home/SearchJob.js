@@ -139,14 +139,14 @@ const SearchJob = () => {
                                     {
                                         index === 1 && (
                                             <div className="mt-5 hidden md:flex items-center justify-center">
-                                                <button className="px-10 py-3 w-full md:w-auto  border border-[#7ed957] cursor-pointer text-[#7ed957] rounded-full hover:bg-[#7ed957] hover:text-white transition font-medium shadow-sm">All Companies</button>
+                                                <button className="px-10  duration-500  py-3 w-full md:w-auto  border border-[#7ed957] cursor-pointer  rounded-full bg-[#7ed957] text-white transition font-medium shadow-sm">All Companies</button>
                                             </div>
                                         )
                                     }
                                     {
                                         index === 2 && (
                                             <div className="mt-5 flex md:hidden items-center justify-center">
-                                                <button className="px-10 py-3 w-full md:w-auto  border border-[#7ed957] cursor-pointer text-[#7ed957] rounded-full hover:bg-[#7ed957] hover:text-white transition font-medium shadow-sm">All Companies</button>
+                                                <button className="px-10 duration-500  py-3 w-full md:w-auto  border border-[#7ed957] cursor-pointer  rounded-full bg-[#7ed957] text-white transition font-medium shadow-sm">All Companies</button>
                                             </div>
                                         )
                                     }
@@ -157,7 +157,7 @@ const SearchJob = () => {
                     }
                     {activeTab === "New" &&
 
-                        <div className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-5 md:gap-10 items-end">
+                        <div className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-5 md:gap-10 ">
                             {companies.map((company, index) => (
                                 <div key={company.id} className="">
                                     <div className="p-5 border border-[#6a40a1] rounded-xl">
