@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Page = () => {
@@ -15,9 +16,9 @@ const Page = () => {
                         <label className='font-semibold' htmlFor="email">Email</label>
                         <input placeholder='Enter your email' className='mt-2 w-full p-2 border border-green-400 rounded-md focus:outline-0 ring-0 bg-white' type="email" name="email" id="email" />
                     </div>
-                    <div className='mt-5'>
+                    <Link href={'/verify-otp'} className='mt-5 block'>
                         <button className='cursor-pointer w-full p-2 bg-green-400 font-semibold text-white rounded-md'>Send OTP</button>
-                    </div>
+                    </Link>
                 </div>
             </div>
         </div >

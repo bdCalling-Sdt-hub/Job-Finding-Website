@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link';
 import React, { useState } from 'react';
 import OTPInput from 'react-otp-input';
 
@@ -34,9 +35,9 @@ const Page = () => {
 
 
                     </div>
-                    <div className='mt-5'>
+                    <Link href="/update-password" className='mt-5 block'>
                         <button className='cursor-pointer w-full p-2 bg-green-400 font-semibold text-white rounded-md'>Verify</button>
-                    </div>
+                    </Link>
                 </div>
             </div>
         </div >

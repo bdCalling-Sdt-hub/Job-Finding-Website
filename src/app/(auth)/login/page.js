@@ -13,7 +13,7 @@ const Page = () => {
 
     return (
         <div className='h-screen bg-gradient-to-b from-[#f9f5ff] to-[#b6a7ca]'>
-             <div>
+            <div>
                 <img className='md:pl-10 pt-10  md:w-60 w-48 mx-auto md:ml-0' src="/Images/Auth/logo2.png" alt="" />
             </div>
             <div className='flex justify-center mt-20'>
@@ -54,7 +54,7 @@ const Page = () => {
                             <input className='' type="checkbox" name="remember" id="remember" />
                             <span className='ml-2 text-gray-600'>Remember me</span>
                         </label>
-                        <a className='text-blue-600 text-sm' href="#">Forgot Password</a>
+                        <Link className='text-blue-600 text-sm' href="/forgot-password">Forgot Password</Link>
                     </div>
                     <div className='mt-5'>
                         <button className='cursor-pointer w-full p-2 bg-green-400 font-semibold text-white rounded-md'>Login</button>

@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 const Page = () => {
@@ -18,7 +19,7 @@ const Page = () => {
 
     return (
         <div className='h-screen bg-gradient-to-b from-[#f9f5ff] to-[#b6a7ca]'>
-             <div>
+            <div>
                 <img className='md:pl-10 pt-10  md:w-60 w-48 mx-auto md:ml-0' src="/Images/Auth/logo2.png" alt="" />
             </div>
             <div className='flex justify-center mt-20'>
@@ -68,11 +69,11 @@ const Page = () => {
                         </div>
                     </div>
 
-                    <div className='mt-5'>
+                    <Link href={'/login'} className='mt-5 block'>
                         <button className='cursor-pointer w-full p-2 bg-green-400 font-semibold text-white rounded-md'>
                             Update
                         </button>
-                    </div>
+                    </Link>
                 </div>
             </div>
         </div>
