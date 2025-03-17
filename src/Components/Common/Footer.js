@@ -50,7 +50,7 @@ const Footer = () => {
                 </div>
 
                 {/* Newsletter Section */}
-                <div>
+                <form>
                     <h3 className="text-lg font-semibold mb-3">SUBSCRIBE TO OUR NEWSLETTER</h3>
                     <p className="text-sm my-3">
                         Stay updated with the latest job opportunities and career insights.
@@ -60,10 +60,10 @@ const Footer = () => {
                         placeholder="Enter your email"
                         className="w-full p-2 mb-3 text-black right-0 focus:outline-0 border rounded"
                     />
-                    <button className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded w-full">
+                    <button className="bg-[#553283] hover:bg-[#7d54b3] cursor-pointer text-white px-4 py-2 rounded w-full">
                         Subscribe
                     </button>
-                </div>
+                </form>
             </div>
         </footer>
     );
