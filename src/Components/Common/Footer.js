@@ -26,8 +26,9 @@ const Footer = () => {
                     <ul className="space-y-2">
                         <li className="text-sm flex items-center gap-2 my-5 cursor-pointer hover:gap-4 duration-300"> <FaChevronRight /> About Us</li>
                         <li className="text-sm flex items-center gap-2 my-5 cursor-pointer hover:gap-4 duration-300"> <FaChevronRight /> How It Works</li>
-                        <li className="text-sm flex items-center gap-2 my-5 cursor-pointer hover:gap-4 duration-300"> <FaChevronRight /> Privacy Policy</li>
-                        <li className="text-sm flex items-center gap-2 my-5 cursor-pointer hover:gap-4 duration-300"> <FaChevronRight /> Terms of Service</li>
+                        <Link href="/privacypolicy" className="text-sm flex items-center gap-2 my-5 cursor-pointer hover:gap-4 duration-300"> <FaChevronRight /> Privacy Policy</Link>
+                        <Link href="/termsofservice" className="text-sm flex items-center gap-2 my-5 cursor-pointer hover:gap-4 duration-300"> <FaChevronRight /> Terms of Service</Link>
+                        <Link href="/blog" className="text-sm flex items-center gap-2 my-5 cursor-pointer hover:gap-4 duration-300"> <FaChevronRight /> Blog</Link>
                     </ul>
                 </div>
                 {/* For Companies & Job Seekers */}
