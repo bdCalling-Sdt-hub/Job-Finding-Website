@@ -2,8 +2,8 @@ import React from 'react';
 
 const Page = () => {
     return (
-        <div>
-            <div className='w-[90%] mx-auto my-20 ' >
+        <div className=' '>
+            <section className=' w-[90%] mx-auto my-20' >
                 <h2 className='text-4xl font-medium text-center'>Connecting Talent with Opportunity</h2>
                 <p className='max-w-[500px] mx-auto my-8 text-[#7a7a7a] text-center'>Korem ipsum dolor sit amet, consectetur adipiscing elit. Korem ipsum dolor sit amet, consectetur adipiscing elit. Korem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <div className='max-w-[750px] mx-auto grid grid-cols-1 lg:grid-cols-3 gap-5 mt-10'>
@@ -60,7 +60,69 @@ const Page = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+            <section className='my-20 w-[90%] mx-auto grid grid-cols-2 items-center gap-10'>
+                <div>
+                    <img className='w-full' src="/Images/about/about-1.png" alt="" />
+                </div>
+                <div className='text-right'>
+                    <h2 className='md:text-4xl text-2xl mb-5'>Empowering Careers, <br /> Connecting Talent</h2>
+                    <div className='flex justify-end gap-5'>
+                        <p className='lg:w-3/4 '>Our mission is to create a dynamic job platform that connects job seekers with the right opportunities while helping companies find top talent. We aim to simplify the hiring process through innovative tools, insightful resources, and a seamless user experience.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section className='py-10  border-b border-t border-[#7ed957] '>
+
+                <div className='w-[90%] mx-auto grid grid-cols-2 items-center gap-10'>
+                    <div className=''>
+                        <h2 className='md:text-4xl text-2xl mb-5'>Title 3</h2>
+                        <div className=''>
+                            <p className='lg:w-3/4 '>Rorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img className='w-full' src="/Images/about/about-2.png" alt="" />
+                    </div>
+
+                </div>
+            </section>
+            <section className='my-20 w-[90%] mx-auto grid grid-cols-2 items-center gap-10'>
+                <div>
+                    <img className='md:w-3/4 mx-auto' src="/Images/about/about-3.png" alt="" />
+                </div>
+                <div className=''>
+                    <h2 className='md:text-4xl text-2xl mb-5'>Title 4</h2>
+                    <div className=''>
+                        <p className='lg:w-3/4 '>Our mission is to create a dynamic job platform that connects job seekers with the right opportunities while helping companies find top talent. We aim to simplify the hiring process through innovative tools, insightful resources, and a seamless user experience. Our mission is to create a dynamic job platform that connects job seekers with the right opportunities while helping companies find top talent. We aim to simplify the hiring process through innovative tools, insightful resources, and a seamless user experience.</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <section className='my-28 w-[90%] mx-auto grid grid-cols-2 items-center gap-10'>
+                <img className='w-full' src="/Images/about/about-31.png" alt="" />
+                <img className='w-full' src="/Images/about/about-32.png" alt="" />
+            </section>
+
+            <section className='my-20 w-[90%] mx-auto grid grid-cols-3 items-center gap-10'>
+                <div className='bg-gray-50 border-b-2 border-[#7ed957] p-5'>
+                    <h2 className='text-3xl font-semibold mb-5'>Title 4</h2>
+                    <p className='leading-[1.7]'>Our mission is to create a dynamic job platform that connects job seekers with the right opportunities while helping companies find top talent. We aim to simplify the hiring process through innovative tools, insightful resources, and a seamless user experience. Our mission is to create a dynamic job platform that connects job seekers with the right opportunities while helping companies find top talent</p>
+                </div>
+                <div className='bg-gray-50 border-b-2 border-[#7ed957] p-5'>
+                    <h2 className='text-3xl font-semibold mb-5'>Title 4</h2>
+                    <p className='leading-[1.7]'>Our mission is to create a dynamic job platform that connects job seekers with the right opportunities while helping companies find top talent. We aim to simplify the hiring process through innovative tools, insightful resources, and a seamless user experience. Our mission is to create a dynamic job platform that connects job seekers with the right opportunities while helping companies find top talent</p>
+                </div>
+                <div className='bg-gray-50 border-b-2 border-[#7ed957] p-5'>
+                    <h2 className='text-3xl font-semibold mb-5'>Title 4</h2>
+                    <p className='leading-[1.7]'>Our mission is to create a dynamic job platform that connects job seekers with the right opportunities while helping companies find top talent. We aim to simplify the hiring process through innovative tools, insightful resources, and a seamless user experience. Our mission is to create a dynamic job platform that connects job seekers with the right opportunities while helping companies find top talent</p>
+                </div>
+            </section>
+
+
+
         </div>
     );
 }
