@@ -43,7 +43,7 @@ const SearchJob = () => {
     const [activeTab, setActiveTab] = useState("featured");
 
     return (
-        <div className=" mx-auto w-[90vw]">
+        <div className="mx-auto w-[90vw]">
             {/* Search Job Container */}
             <div className="md:flex items-center gap-3 space-y-3 md:space-y-0">
                 <div className="grid md:grid-cols-3 space-y-1 md:space-y-0 w-full md:border border-purple-500 md:rounded-full overflow-hidden md:shadow-md bg-white">

@@ -24,7 +24,7 @@ const Footer = () => {
                 <div>
                     <h3 className="text-lg font-semibold mb-3">General</h3>
                     <ul className="space-y-2">
-                        <li className="text-sm flex items-center gap-2 my-5 cursor-pointer hover:gap-4 duration-300"> <FaChevronRight /> About Us</li>
+                        <Link href="/aboutus" className="text-sm flex items-center gap-2 my-5 cursor-pointer hover:gap-4 duration-300"> <FaChevronRight /> About Us</Link>
                         <li className="text-sm flex items-center gap-2 my-5 cursor-pointer hover:gap-4 duration-300"> <FaChevronRight /> How It Works</li>
                         <Link href="/privacypolicy" className="text-sm flex items-center gap-2 my-5 cursor-pointer hover:gap-4 duration-300"> <FaChevronRight /> Privacy Policy</Link>
                         <Link href="/termsofservice" className="text-sm flex items-center gap-2 my-5 cursor-pointer hover:gap-4 duration-300"> <FaChevronRight /> Terms of Service</Link>
