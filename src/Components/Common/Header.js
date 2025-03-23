@@ -16,7 +16,7 @@ const Header = () => {
             {/* Desktop Navigation */}
             <div className='hidden md:flex space-x-10'>
                 <Link href="/" className='text-gray-700 hover:text-[#7ed957] transition'>Explore Companies</Link>
-                <Link href="/" className='text-gray-700 hover:text-[#7ed957] transition'>Browse Jobs</Link>
+                <Link href="/jobs" className='text-gray-700 hover:text-[#7ed957] transition'>Browse Jobs</Link>
             </div>
 
             {/* Sign In Button (Hidden on Small Screens) */}

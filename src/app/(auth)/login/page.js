@@ -59,7 +59,7 @@ const Page = () => {
                     <div className='mt-5'>
                         <button className='cursor-pointer w-full p-2 bg-green-400 font-semibold text-white rounded-md'>Login</button>
                     </div>
-                    <p className='text-center mt-5 text-gray-600'>Don't have an account? <Link className='text-blue-600' href="/signup" >Sign Up</Link></p>
+                    <p className='text-center mt-5 text-gray-600'>Don't have an account? <Link className='text-blue-600' href="/signup-step" >Sign Up</Link></p>
                 </div>
             </div>
         </div>

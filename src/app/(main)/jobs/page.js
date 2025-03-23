@@ -1,13 +1,14 @@
 import { Select } from 'antd';
+import Link from 'next/link';
 import React from 'react';
-import { FaBriefcase, FaMapMarkerAlt, FaSearch } from 'react-icons/fa';
+import { FaBriefcase, FaChevronLeft, FaMapMarkerAlt, FaSearch } from 'react-icons/fa';
 
 const Page = () => {
     return (
         <div>
             <section className="bg-gradient-to-b from-[#e7d5ff] to-[#ffffff]  py-10">
                 <div className='w-[90%] mx-auto py-10'>
-                    <button>Back</button>
+                    <Link href="/" className='flex items-center gap-2'> <FaChevronLeft />Back</Link>
                     <h2 className='md:text-4xl text-2xl font-bold text-center my-5'>Jobs For You</h2>
                     {/* Search Job Container */}
                     <div className="md:flex items-center gap-3 space-y-3 md:space-y-0">
