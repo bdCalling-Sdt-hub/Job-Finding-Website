@@ -1,3 +1,6 @@
+import CareerInsights from '@/Components/Jobs/CareerInsights';
+import FindJobsbyCompanies from '@/Components/Jobs/FindJobsbyCompanies';
+import PopularSearches from '@/Components/Jobs/PopularSearches';
 import { Select } from 'antd';
 import Link from 'next/link';
 import React from 'react';
@@ -58,6 +61,11 @@ const Page = () => {
                     </div>
                 </div>
             </section>
+
+            <PopularSearches />
+            <CareerInsights />
+            <FindJobsbyCompanies />
+
         </div>
     );
 }
