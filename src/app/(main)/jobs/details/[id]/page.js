@@ -1,12 +1,13 @@
 import Link from 'next/link';
 import React from 'react';
 import { CiLinkedin, CiLocationOn, CiMoneyBill } from 'react-icons/ci';
-import { FaAngleLeft, FaRegBookmark, FaWhatsapp } from 'react-icons/fa';
+import { FaAngleLeft, FaAngleRight, FaRegBookmark, FaWhatsapp } from 'react-icons/fa';
 import { RiFileEditLine } from "react-icons/ri";
 import { IoTimeOutline } from "react-icons/io5";
 import { BiLinkAlt } from "react-icons/bi";
 import { LiaFacebookSquare } from "react-icons/lia";
 import { FaXTwitter } from "react-icons/fa6";
+import { Image } from 'antd';
 
 
 const Page = () => {
@@ -59,7 +60,7 @@ const Page = () => {
                             </div>
                         </div>
 
-                        <div className='mt-10 text-[#3f3f3fee] flex items-center justify-between'>
+                        <div className='mt-10 text-[#3f3f3fee] flex flex-wrap gap-3 items-center justify-between'>
                             <div>
                                 <p className='mb-2'>Posted : 3 days ago</p>
                                 <p>Application Deadline: 12 February, 2025</p>
@@ -155,7 +156,7 @@ const Page = () => {
                         <hr className='h-[2px] bg-black w-full mt-10' />
                         <div className='pt-5 pl-5'>
                             <h2 className='font-medium text-xl mb-4'>Share this job:</h2>
-                            <div className='flex items-center gap-2 '>
+                            <div className='flex flex-wrap md:justify-start justify-center items-center gap-2 '>
                                 <button className='flex items-center gap-2 py-2 px-10 bg-[#f7f7ff] text-[#6836b8] cursor-pointer rounded-lg font-semibold'><BiLinkAlt className='text-xl' />Copy Links</button>
                                 <ul className='flex items-center gap-5'>
                                     <li className='cursor-pointer'><LiaFacebookSquare className='text-3xl text-[#2c2c2c]' /></li>
@@ -176,21 +177,22 @@ const Page = () => {
                             <h3 className='text-2xl font-semibold'>Brac International</h3>
                         </div>
                         <div className='grid grid-cols-3 gap-2 my-5'>
-                            <img className='w-full' src="/Images/Jobs/jobDetails/Rectangle 22.png" alt="" />
-                            <img className='w-full' src="/Images/Jobs/jobDetails/Rectangle 23.png" alt="" />
-                            <img className='w-full' src="/Images/Jobs/jobDetails/Rectangle 24.png" alt="" />
-                            <img className='w-full' src="/Images/Jobs/jobDetails/Rectangle 25.png" alt="" />
-                            <img className='w-full' src="/Images/Jobs/jobDetails/Rectangle 26.png" alt="" />
-                            <img className='w-full' src="/Images/Jobs/jobDetails/Rectangle 27.png" alt="" />
+                            <Image className='w-full' src="/Images/Jobs/jobDetails/Rectangle 22.png" alt="" />
+                            <Image className='w-full' src="/Images/Jobs/jobDetails/Rectangle 23.png" alt="" />
+                            <Image className='w-full' src="/Images/Jobs/jobDetails/Rectangle 24.png" alt="" />
+                            <Image className='w-full' src="/Images/Jobs/jobDetails/Rectangle 25.png" alt="" />
+                            <Image className='w-full' src="/Images/Jobs/jobDetails/Rectangle 26.png" alt="" />
+                            <Image className='w-full' src="/Images/Jobs/jobDetails/Rectangle 27.png" alt="" />
                         </div>
-                        <div className='flex items-center justify-center gap-5'>
+                        <div className='flex items-center flex-wrap justify-center gap-5'>
                             <button className='cursor-pointer py-3 px-10 rounded-full bg-[#7ed957] text-white font-semibold'>View Company </button>
-                            <button className='cursor-pointer flex items-center justify-between gap-2 py-3 px-10 rounded-full border-[#553283] border text-[#553283] font-semibold'> <span className='bg-[#7ed957] text-white w-6 h-6 flex items-center justify-center text-sm rounded-full'>9+</span> All Jobs</button>
+                            <button className='cursor-pointer py-3 px-10 rounded-full border-[#553283] border text-[#553283] font-semibold relative'> <span className='absolute top-2 left-2 bg-[#7ed957] text-white w-8 h-8 flex items-center justify-center text-sm rounded-full'>9+</span><span className='ml-2'>All Jobs</span></button>
                         </div>
 
+                        <hr className='h-[2px] bg-gray-400 border-0 w-full my-5' />
 
                         <div className='my-10'>
-                            <div className="grid grid-cols-2 gap-3">
+                            <div className="grid lg:grid-cols-2 gap-3">
                                 <div className="flex items-center justify-center  font-medium gap-3 bg-[#f3ebff] px-4 py-3 rounded-xl shadow-[2px_2px_0px_#3d2b58] ">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 22" fill="none">
                                         <path d="M22.909 12.2832C22.5817 12.2832 22.3636 12.5014 22.3636 12.8286V19.9196C22.3636 20.2468 22.1454 20.465 21.8181 20.465H2.18172C1.85444 20.465 1.63629 20.2468 1.63629 19.9196V12.8286C1.63629 12.5014 1.41808 12.2832 1.09085 12.2832C0.763613 12.2832 0.54541 12.5014 0.54541 12.8286V19.9196C0.54541 20.8468 1.25449 21.5559 2.18177 21.5559H21.8181C22.7454 21.5559 23.4545 20.8468 23.4545 19.9196V12.8286C23.4545 12.5014 23.2363 12.2832 22.909 12.2832Z" fill="#09091B" />
@@ -229,9 +231,30 @@ const Page = () => {
                         </div>
                         <hr className='h-[2px] bg-gray-400 border-0 w-full my-5' />
 
+                        <div>
+                            <h2 className='text-2xl font-semibold'>Company Details</h2>
+                            <p className='my-5 leading-[1.8]'>Worem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.</p>
+                        </div>
 
+                        <hr className='h-[2px] bg-gray-400 border-0 w-full my-5' />
+                        <div>
+                            <h2 className='text-2xl font-semibold mb-3'>Company Location</h2>
+                            <p className='underline'>524 Broadway, New York, NY 10012-4408 </p>
+                            <div className='flex justify-center mt-10'>
+                                <button className='cursor-pointer py-3 px-8 border-2 font-semibold  hover:bg-[#553283] hover:text-white duration-300 border-[#553283] text-[#553283] rounded-lg '>Follow</button>
+                            </div>
+                        </div>
 
                     </div>
+
+                    <div className='bg-[#fffff9] p-5 border border-[#553283] rounded-md mt-5 '>
+                        <h2 className='text-2xl font-medium flex items-center gap-3'>
+                            {`>>`}
+                            <span>Deliverables</span>
+                        </h2>
+                    </div>
+
+
                 </div>
             </div>
         </div>
