@@ -1,21 +1,48 @@
+"use client"
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
+import { Modal, Button, Image } from 'antd';  // Import Ant Design Modal and Button components
 import { CiLinkedin, CiLocationOn, CiMoneyBill } from 'react-icons/ci';
 import { FaAngleLeft, FaAngleRight, FaRegBookmark, FaWhatsapp } from 'react-icons/fa';
-import { RiFileEditLine } from "react-icons/ri";
+import { RiFileEditLine, RiTimerLine } from "react-icons/ri";
 import { IoTimeOutline } from "react-icons/io5";
 import { BiLinkAlt } from "react-icons/bi";
 import { LiaFacebookSquare } from "react-icons/lia";
 import { FaXTwitter } from "react-icons/fa6";
-import { Image } from 'antd';
+import { MdOutlineDateRange } from 'react-icons/md';
+import MeetTheTeam from '@/Components/Jobs/MeetTheTeam';
+import JoinWithUsApply from '@/Components/Jobs/JoinWithUsApply';
+import Dragger from 'antd/es/upload/Dragger';
+// import 'antd/dist/antd.css'; // Import Ant Design styles globally
+
 
 
 const Page = () => {
+
+    const [isModalOpen, setIsModalOpen] = useState(false); // State to control modal visibility
+
+    // Function to open the modal
+    const showModal = () => {
+        setIsModalOpen(true);
+    };
+
+    // Function to close the modal
+    const handleOk = () => {
+        setIsModalOpen(false);
+    };
+
+    // Function to handle canceling the modal
+    const handleCancel = () => {
+        setIsModalOpen(false);
+    };
+
+
+
     return (
         <div className='w-[90%] mx-auto py-10'>
             <Link className='flex items-center gap-1 mb-5' href="/jobs/all-jobs"><FaAngleLeft className='text-xl' />Back </Link>
             <div className='grid grid-cols-1 md:grid-cols-3 gap-5'>
-                <div className='col-span-2'>
+                <div className='md:col-span-2'>
                     <div className='bg-[#fffff9] p-5 border border-[#553283] rounded-md'>
                         <div className='flex items-center gap-3'>
                             <img className='w-20' src="/Images/Jobs/PopulerSearch/companyLogo.png" alt="" />
@@ -66,7 +93,7 @@ const Page = () => {
                                 <p>Application Deadline: 12 February, 2025</p>
                             </div>
                             <div className='flex items-center gap-3'>
-                                <button className="py-3 cursor-pointer px-8 font-semibold text-[#553283] block border-2 rounded-lg border-[#553283] hover:bg-[#553283] hover:text-white duration-500">
+                                <button onClick={showModal} className="py-3 cursor-pointer px-8 font-semibold text-[#553283] block border-2 rounded-lg border-[#553283] hover:bg-[#553283] hover:text-white duration-500">
                                     Apply Now
                                 </button>
                                 <span className='cursor-pointer  w-12 h-12 flex items-center justify-center rounded-full   border-2 border-[#553283] bg-[#eadaff] text-[#553283]'><FaRegBookmark /></span>
@@ -170,7 +197,7 @@ const Page = () => {
                     </div>
 
                 </div>
-                <div className='col-span-1 '>
+                <div className='md:col-span-1'>
                     <div className='bg-[#fffff9] p-5 border border-[#553283] rounded-md'>
                         <div className='flex items-center gap-3'>
                             <img className='w-20' src="/Images/Jobs/PopulerSearch/companyLogo.png" alt="" />
@@ -252,11 +279,132 @@ const Page = () => {
                             {`>>`}
                             <span>Deliverables</span>
                         </h2>
+                        <ul>
+                            <li className='flex items-center gap-3 my-8 text-sm'>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 32 33" fill="none">
+                                    <path d="M11.3325 16.8594L20.6659 16.8594" stroke="#7ED957" stroke-width="2" stroke-linecap="round" />
+                                    <path d="M11.3325 20.8594L16.6659 20.8594" stroke="#7ED957" stroke-width="2" stroke-linecap="round" />
+                                    <path d="M7.33301 12.4028C7.33301 10.3856 7.33301 9.377 7.60034 8.56134C8.13318 6.93554 9.4082 5.66053 11.034 5.12768C11.8497 4.86035 12.8583 4.86035 14.8755 4.86035V4.86035C15.7583 4.86035 16.1998 4.86035 16.6209 4.9276C17.4539 5.06063 18.244 5.38788 18.9271 5.88286C19.2724 6.13309 19.5845 6.44522 20.2088 7.06949L22.1475 9.00814C23.0771 9.93775 23.5419 10.4026 23.8743 10.945C24.169 11.4259 24.3862 11.9502 24.5178 12.4986C24.6663 13.1172 24.6663 13.7746 24.6663 15.0893V18.927C24.6663 21.9373 24.6663 23.4424 24.0805 24.5922C23.5652 25.6036 22.7429 26.4259 21.7315 26.9412C20.5818 27.527 19.0544 27.527 15.9997 27.527V27.527C12.9449 27.527 11.4176 27.527 10.2678 26.9412C9.25644 26.4259 8.43417 25.6036 7.91885 24.5922C7.33301 23.4424 7.33301 21.9373 7.33301 18.927V12.4028Z" stroke="#7ED957" stroke-width="2" />
+                                    <path d="M16.6675 4.86035V4.86035C16.6675 7.30613 16.6675 8.52901 17.058 9.49684C17.6043 10.8504 18.6775 11.9236 20.031 12.4698C20.9988 12.8604 22.2217 12.8604 24.6675 12.8604V12.8604" stroke="#7ED957" stroke-width="2" />
+                                </svg>
+                                <span>A detailed CV outlining professional background, education, and achievements.</span>
+                            </li>
+                            <li className='flex items-center gap-3 my-8 text-sm'>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 32 33" fill="none">
+                                    <path d="M5.33301 16.9702C5.33301 15.3446 5.33301 14.5318 5.49082 13.7923C5.83656 12.1721 6.73293 10.7218 8.02744 9.68795C8.61831 9.21607 9.34529 8.85258 10.7993 8.1256L11.2294 7.91053C12.7588 7.14583 13.5235 6.76349 14.3155 6.572C15.4223 6.3044 16.577 6.3044 17.6838 6.572C18.4759 6.76349 19.2406 7.14583 20.77 7.91053L21.2001 8.1256C22.6541 8.85258 23.381 9.21607 23.9719 9.68795C25.2664 10.7218 26.1628 12.1721 26.5085 13.7923C26.6663 14.5318 26.6663 15.3446 26.6663 16.9702V16.9702C26.6663 19.5027 26.6663 20.7689 26.3499 21.7983C25.652 24.0678 23.8754 25.8444 21.6059 26.5422C20.5765 26.8587 19.3103 26.8587 16.7778 26.8587H15.2216C12.6891 26.8587 11.4228 26.8587 10.3935 26.5422C8.12391 25.8444 6.3473 24.0678 5.64949 21.7983C5.33301 20.7689 5.33301 19.5027 5.33301 16.9702V16.9702Z" stroke="#7ED957" stroke-width="2" />
+                                    <path d="M5.33301 13.5244L7.23394 15.4253C8.57795 16.7694 10.4008 17.5244 12.3015 17.5244H19.6978C21.5985 17.5244 23.4214 16.7694 24.7654 15.4253L26.6663 13.5244" stroke="#7ED957" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                                <span>A personalized cover letter highlighting your skills, experience, and enthusiasm for the role.</span> </li>
+                            <li className='flex items-center gap-3 my-8 text-sm'>
+                                <svg className='-ml-1' xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 32 33" fill="none">
+                                    <path d="M16.2437 17.9803C18.0658 18.8913 18.0658 21.4915 16.2437 22.4026C14.6 23.2244 12.666 22.0291 12.666 20.1914C12.666 18.3537 14.6 17.1584 16.2437 17.9803Z" stroke="#7ED957" stroke-width="2" />
+                                    <path d="M16.6663 4.86035H14.4997C10.5416 4.86035 7.33301 8.06897 7.33301 12.027V20.3604C7.33301 24.3184 10.5416 27.527 14.4997 27.527H17.4997C21.4577 27.527 24.6663 24.3184 24.6663 20.3603V12.8604M16.6663 4.86035V4.86035C17.5201 4.86035 18.3388 5.19949 18.9425 5.80316L23.7235 10.5842C24.3272 11.1879 24.6663 12.0066 24.6663 12.8604V12.8604M16.6663 4.86035V5.69368C16.6663 9.65172 19.875 12.8604 23.833 12.8604H24.6663" stroke="#7ED957" stroke-width="2" />
+                                </svg>
+                                <span> A brief recording explaining why you're the ideal candidate for this position.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className='bg-[#fffff9] p-5 border border-[#553283] rounded-md mt-5 '>
+                        <h2 className='  text-2xl text-primary mb-6 '>Job Overview</h2>
+                        <div className='grid grid-cols-2   xl:grid-cols-3 gap-5'>
+                            <div>
+                                <MdOutlineDateRange className='text-3xl text-[#553283]' />
+                                <span className='mt-3 mb-1 text-sm text-gray-500 inline-block'>Job Posted:</span>
+                                <h3> 14 Jun, 2021 </h3>
+                            </div>
+                            <div>
+                                <RiTimerLine className='text-3xl text-[#553283]' />
+                                <span className='mt-3 mb-1 text-sm text-gray-500 inline-block'>Job expire in:</span>
+                                <h3> 14 Jun, 2021 </h3>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
+                                    <path d="M4.8335 22.6924L16.8335 29.6924L28.8335 22.6924" stroke="#553283" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M4.8335 16.6924L16.8335 23.6924L28.8335 16.6924" stroke="#553283" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M4.8335 10.6924L16.8335 17.6924L28.8335 10.6924L16.8335 3.69238L4.8335 10.6924Z" stroke="#553283" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <span className='mt-3 mb-1 text-sm text-gray-500 inline-block'>Job Level:</span>
+                                <h3> Executive</h3>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
+                                    <path d="M5.5 8.69238V24.6924C5.5 25.2228 5.71071 25.7315 6.08579 26.1066C6.46086 26.4817 6.96957 26.6924 7.5 26.6924H27.5C27.7652 26.6924 28.0196 26.587 28.2071 26.3995C28.3946 26.212 28.5 25.9576 28.5 25.6924V11.6924C28.5 11.4272 28.3946 11.1728 28.2071 10.9853C28.0196 10.7977 27.7652 10.6924 27.5 10.6924H7.5C6.96957 10.6924 6.46086 10.4817 6.08579 10.1066C5.71071 9.73152 5.5 9.22282 5.5 8.69238ZM5.5 8.69238C5.5 8.16195 5.71071 7.65324 6.08579 7.27817C6.46086 6.9031 6.96957 6.69238 7.5 6.69238H24.5" stroke="#553283" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M23.5 18.6924C23.5 18.9685 23.2761 19.1924 23 19.1924C22.7239 19.1924 22.5 18.9685 22.5 18.6924C22.5 18.4162 22.7239 18.1924 23 18.1924C23.2761 18.1924 23.5 18.4162 23.5 18.6924Z" fill="#09091B" stroke="#553283" stroke-width="2" />
+                                </svg>
+                                <span className='mt-3 mb-1 text-sm text-gray-500 inline-block'>Seniority</span>
+                                <h3> {`>`} 2 Years</h3>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
+                                    <path d="M26.5 21.0806V8.75351C26.5 8.41898 26.148 8.20141 25.8488 8.35101L21.3232 10.6138C21.2225 10.6641 21.1066 10.6749 20.9984 10.644L12.0016 8.07348C11.8934 8.04255 11.7775 8.05332 11.6768 8.10367L6.74875 10.5677C6.5963 10.6439 6.5 10.7997 6.5 10.9702V23.2973C6.5 23.6318 6.85204 23.8494 7.15125 23.6998L11.6768 21.437C11.7775 21.3867 11.8934 21.3759 12.0016 21.4068L20.9984 23.9773C21.1066 24.0082 21.2225 23.9975 21.3232 23.9471L26.2512 21.4831C26.4037 21.4069 26.5 21.2511 26.5 21.0806Z" stroke="#553283" stroke-width="2" />
+                                    <path d="M21.1665 24.0257V10.6924" stroke="#553283" stroke-width="2" />
+                                    <path d="M11.8335 21.3587V8.02539" stroke="#553283" stroke-width="2" />
+                                </svg>
+                                <span className='mt-3 mb-1 text-sm text-gray-500 inline-block'>Location</span>
+                                <h3> Dhaka, Bangladesh</h3>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
+                                    <rect x="4.5" y="8.69238" width="24" height="16" rx="2" stroke="#553283" stroke-width="2" />
+                                    <path d="M7.1665 12.6924H11.1665" stroke="#553283" stroke-width="2" stroke-linecap="round" />
+                                    <path d="M21.8335 20.6924H25.8335" stroke="#553283" stroke-width="2" stroke-linecap="round" />
+                                    <circle cx="16.5002" cy="16.6921" r="2.66667" stroke="#553283" stroke-width="2" />
+                                </svg>
+                                <span className='mt-3 mb-1 text-sm text-gray-500 inline-block'>Salary</span>
+                                <h3> €10,000 - €12,000</h3>
+                            </div>
+                        </div>
                     </div>
 
 
                 </div>
             </div>
+
+
+            <Modal
+                title="Apply Job: UIX Designer"
+                visible={isModalOpen}   // The modal visibility is controlled by this state
+                // onOk={handleOk}        // The function triggered when the OK button is clicked
+                onCancel={handleCancel} // The function triggered when the Cancel button is clicked
+                footer={null}
+
+
+            >
+
+                <div>
+                    <h2 className='mb-2 font-semibold '>Cover Letter</h2>
+                    <Dragger  >
+                        <div>
+                            <img className='w-12 mb-3 mx-auto' src="/Images/upload.png" alt="" />
+                        </div>
+                        <p className=" !text-[#777]">Drag your file(s) to start uploading</p>
+                        <div>
+                            <button className='cursor-pointer py-2 px-8 border-2 border-[#553283] font-semibold mt-3 text-[#553283] rounded-lg'>Browse files</button>
+                        </div>
+                    </Dragger>
+                </div>
+                <br />
+                <div>
+                    <h2 className='mb-2 font-semibold '>Short Video</h2>
+                    <Dragger  >
+                        <div>
+                            <img className='w-12 mb-3 mx-auto' src="/Images/upload.png" alt="" />
+                        </div>
+                        <p className=" !text-[#777]">Drag your file(s) to start uploading</p>
+                        <div>
+                            <button className='cursor-pointer py-2 px-8 border-2 border-[#553283] font-semibold mt-3 text-[#553283] rounded-lg'>Browse files</button>
+                        </div>
+                    </Dragger>
+                </div>
+
+                <div className='mt-5'>
+                    <button onClick={handleCancel} className='hover:bg-[#553283] hover:text-white duration-300 cursor-pointer py-2 px-8 border-2 border-[#553283] font-semibold w-full text-[#553283] rounded-lg'>Apply Now</button>
+                </div>
+            </Modal>
+
+            <MeetTheTeam />
+            <JoinWithUsApply />
+
         </div>
     );
 }

@@ -15,7 +15,7 @@ const Header = () => {
 
             {/* Desktop Navigation */}
             <div className='hidden md:flex space-x-10'>
-                <Link href="/" className='text-gray-700 hover:text-[#7ed957] transition'>Explore Companies</Link>
+                <Link href="/companies" className='text-gray-700 hover:text-[#7ed957] transition'>Explore Companies</Link>
                 <Link href="/jobs" className='text-gray-700 hover:text-[#7ed957] transition'>Browse Jobs</Link>
             </div>
 
@@ -36,7 +36,7 @@ const Header = () => {
 
             {/* Mobile Dropdown Menu */}
             {isOpen && (
-                <div className='absolute top-20 duration-500 left-0 w-full bg-white shadow-lg p-4 flex flex-col space-y-4 md:hidden'>
+                <div className='absolute top-20 duration-500 left-0 w-full bg-white shadow-lg p-4 flex flex-col space-y-4 md:hidden z-[9999]'>
                     <Link href="/" className='text-gray-700 hover:text-[#7ed957] transition'>Explore Companies</Link>
                     <Link href="/" className='text-gray-700 hover:text-[#7ed957] transition'>Browse Jobs</Link>
                     <Link className='bg-[#7ed957] text-center text-white py-3 px-8 rounded-md hover:bg-[#7ed957] transition' href="/login">

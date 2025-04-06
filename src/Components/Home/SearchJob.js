@@ -3,6 +3,7 @@ import { useState } from "react";
 import React from "react";
 import { FaSearch, FaMapMarkerAlt, FaBriefcase, FaUsers } from "react-icons/fa";
 import { Select } from "antd";
+import Link from "next/link";
 
 const { Option } = Select;
 
@@ -139,14 +140,14 @@ const SearchJob = () => {
                                     {
                                         index === 1 && (
                                             <div className="mt-5 hidden md:flex items-center justify-center">
-                                                <button className="px-10  duration-500  py-3 w-full md:w-auto  border border-[#7ed957] cursor-pointer  rounded-full bg-[#7ed957] text-white transition font-medium shadow-sm">All Companies</button>
+                                                <Link href="/companies" className="px-10  duration-500  py-3 w-full md:w-auto  border border-[#7ed957] cursor-pointer  rounded-full bg-[#7ed957] text-white transition font-medium shadow-sm">All Companies</Link>
                                             </div>
                                         )
                                     }
                                     {
                                         index === 2 && (
                                             <div className="mt-5 flex md:hidden items-center justify-center">
-                                                <button className="px-10 duration-500  py-3 w-full md:w-auto  border border-[#7ed957] cursor-pointer  rounded-full bg-[#7ed957] text-white transition font-medium shadow-sm">All Companies</button>
+                                                <Link href="/companies" className="px-10 duration-500  py-3 w-full md:w-auto  border border-[#7ed957] cursor-pointer  rounded-full bg-[#7ed957] text-white transition font-medium shadow-sm">All Companies</Link>
                                             </div>
                                         )
                                     }
@@ -157,7 +158,7 @@ const SearchJob = () => {
                     }
                     {activeTab === "New" &&
 
-                        <div className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-5 md:gap-10 ">
+                        <div className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-5 md:gap-10 items-end">
                             {companies.map((company, index) => (
                                 <div key={company.id} className="">
                                     <div className="p-5 border border-[#6a40a1] rounded-xl">
@@ -175,6 +176,21 @@ const SearchJob = () => {
 
                                         <button className="mt-3 text-[#7ed957] border border-[#7ed957] cursor-pointer hover:bg-[#7ed957] hover:text-white transition px-8 py-3 rounded-md font-semibold">Follow</button>
                                     </div>
+
+                                    {
+                                        index === 1 && (
+                                            <div className="mt-5 hidden md:flex items-center justify-center">
+                                                <Link href="/companies" className="px-10  duration-500  py-3 w-full md:w-auto  border border-[#7ed957] cursor-pointer  rounded-full bg-[#7ed957] text-white transition font-medium shadow-sm">All Companies</Link>
+                                            </div>
+                                        )
+                                    }
+                                    {
+                                        index === 2 && (
+                                            <div className="mt-5 flex md:hidden items-center justify-center">
+                                                <Link href="/companies" className="px-10 duration-500  py-3 w-full md:w-auto  border border-[#7ed957] cursor-pointer  rounded-full bg-[#7ed957] text-white transition font-medium shadow-sm">All Companies</Link>
+                                            </div>
+                                        )
+                                    }
 
                                 </div>
                             ))}
