@@ -38,7 +38,7 @@ const Footer = () => {
                         <li className="text-sm flex items-center gap-2 my-5 cursor-pointer hover:gap-4 duration-300"> <FaChevronRight /> Why Karma</li>
                         <li className="text-sm flex items-center gap-2 my-5 cursor-pointer hover:gap-4 duration-300"> <FaChevronRight /> Explore Companies</li>
                         <li className="text-sm flex items-center gap-2 my-5 cursor-pointer hover:gap-4 duration-300"> <FaChevronRight /> Pricing</li>
-                        <li className="text-sm flex items-center gap-2 my-5 cursor-pointer hover:gap-4 duration-300"> <FaChevronRight /> Resources</li>
+
                     </ul>
                 </div>
                 {/* for job seekers */}
@@ -47,6 +47,8 @@ const Footer = () => {
                     <ul className="space-y-2">
                         <li className="text-sm flex items-center gap-2 my-5 cursor-pointer hover:gap-4 duration-300"> <FaChevronRight /> Browse Jobs</li>
                         <Link href="/contact" className="text-sm flex items-center gap-2 my-5 cursor-pointer hover:gap-4 duration-300"> <FaChevronRight /> Contact Us</Link>
+                        <li className="text-sm flex items-center gap-2 my-5 cursor-pointer hover:gap-4 duration-300"> <FaChevronRight /> Resources</li>
+                        <Link href="/networking-events" className="text-sm flex items-center gap-2 my-5 cursor-pointer hover:gap-4 duration-300"> <FaChevronRight />Networking Events</Link>
                     </ul>
                 </div>
 

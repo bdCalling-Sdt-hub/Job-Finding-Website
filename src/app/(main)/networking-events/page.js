@@ -22,7 +22,7 @@ const Page = () => {
                     <IoArrowBack className='text-2xl' /> Back
                 </Link>
                 <h2 className='text-5xl font-semibold text-primary text-center my-10'>
-                    All Blog Posts
+                    Networking Events
                 </h2>
 
                 <div className='w-full max-w-lg mx-auto'>
@@ -40,15 +40,18 @@ const Page = () => {
                 </div>
             </div>
 
-            <h2 className='text-3xl font-medium text-primary my-5'>Recent Blog Posts</h2>
+            <h2 className='text-3xl font-medium text-primary my-5'>Upcoming Networking Events</h2>
 
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5'>
-                {[...Array(8)].map((_, index) => (
+                {[...Array(4)].map((_, index) => (
                     <div className='bg-white shadow-[0_0_10px_rgba(0,0,0,0.1)] rounded-lg p-3' key={index}>
-                        <img src='/Images/Blog/card-image.png' alt='' />
-                        <div className='flex items-center gap-2 my-3 text-sm text-gray-500'>
-                            <CiCalendar className='text-xl' />
-                            <span>1 February, 2025</span>
+                        <img src='/Images/Blog/event.png' alt='' />
+                        <div className='flex items-center justify-between gap-2 my-3 text-sm text-gray-500'>
+                            <div className='flex items-center gap-2 my-3 text-sm text-gray-500'>
+                                <CiCalendar className='text-xl' />
+                                <span>1 February, 2025</span>
+                            </div>
+                            <span className='bg-[#ffff684f] text-[#b8af36] font-semibold px-2 py-1 rounded-lg'>Upcomeing</span>
                         </div>
                         <h2 className='my-3 font-semibold'>This is my Best Blog Post Ever</h2>
                         <p className='text-gray-600'>
@@ -57,7 +60,35 @@ const Page = () => {
                         </p>
 
                         <Link
-                            href={`/blog/${++index}`}
+                            href={`/networking-events/${++index}`}
+                            className='flex cursor-pointer items-center font-semibold mt-10 gap-2 text-[#553283]'
+                        >
+                            Read More <FaArrowRight className='text-xl' />
+                        </Link>
+                    </div>
+                ))}
+            </div>
+
+            <h2 className='text-3xl font-medium text-primary mb-5 mt-20'>Recent Events</h2>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5'>
+                {[...Array(4)].map((_, index) => (
+                    <div className='bg-white shadow-[0_0_10px_rgba(0,0,0,0.1)] rounded-lg p-3' key={index}>
+                        <img src='/Images/Blog/event.png' alt='' />
+                        <div className='flex items-center justify-between gap-2 my-3 text-sm text-gray-500'>
+                            <div className='flex items-center gap-2 my-3 text-sm text-gray-500'>
+                                <CiCalendar className='text-xl' />
+                                <span>1 February, 2025</span>
+                            </div>
+                            <span className='bg-[#f4edff] text-[#6836b8] font-semibold px-2 py-1 rounded-lg'>Recent </span>
+                        </div>
+                        <h2 className='my-3 font-semibold'>This is my Best Blog Post Ever</h2>
+                        <p className='text-gray-600'>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit unde natus consequuntur omnis
+                            architecto culpa laudantium perferendis eum reprehenderit praesentium.
+                        </p>
+
+                        <Link
+                            href={`/networking-events/${++index}`}
                             className='flex cursor-pointer items-center font-semibold mt-10 gap-2 text-[#553283]'
                         >
                             Read More <FaArrowRight className='text-xl' />
@@ -105,6 +136,9 @@ const Page = () => {
                     Next <FaArrowRight className='ml-2' />
                 </button>
             </div>
+
+
+
         </div>
     );
 };

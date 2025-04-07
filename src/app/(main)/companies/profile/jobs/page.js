@@ -123,10 +123,15 @@ const Page = () => {
                                 <TbBrandGoogleAnalytics /> Dhaka, Bangladesh
                             </p>
                             <div className="mt-3 flex justify-between items-center">
-                                <p>Posted: 3 Days Ago</p>
-                                <Link href={'/jobs/details/1'} className="py-3 cursor-pointer px-8 font-semibold text-[#553283] border-2 rounded-lg border-[#553283] hover:bg-[#553283] hover:text-white duration-500">
-                                    Apply Now
-                                </Link>
+                                <div>
+                                    <span className='text-[#5318a0] bg-[#eadaff] py-2 px-4 rounded-full text-[12px]'>Web Developer</span>
+                                </div>
+                                <div>
+                                    <p className='text-sm text-gray-600 text-right'>Posted: 3 Days Ago</p>
+                                    <Link href={'/jobs/details/1'} className="inline-block mt-1 py-3 cursor-pointer px-8 font-semibold text-[#553283] border-2 rounded-lg border-[#553283] hover:bg-[#553283] hover:text-white duration-500">
+                                        Apply Now
+                                    </Link>
+                                </div>
                             </div>
                         </div>
                     </div>
