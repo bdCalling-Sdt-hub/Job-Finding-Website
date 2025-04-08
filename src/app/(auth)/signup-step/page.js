@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { MdWork, MdHomeWork } from "react-icons/md";
 import { GrLinkNext } from "react-icons/gr";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 
 const Page = () => {
@@ -18,9 +19,9 @@ const Page = () => {
     return (
         <div className="h-screen  bg-gradient-to-b from-[#f9f5ff] to-[#b6a7ca]">
             {/* Logo Section */}
-            <div>
+            <Link href="/">
                 <img className='md:pl-10 pt-10  md:w-60 w-48 mx-auto md:ml-0' src="/Images/Auth/logo2.png" alt="" />
-            </div>
+            </Link>
 
             {/* Sign Up Section */}
             <div className="mt-10 text-center">

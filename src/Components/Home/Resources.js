@@ -17,7 +17,7 @@ const Resources = () => {
                             <li className='flex items-center gap-2'><FaCheck className='text-xl' />Practical advice for career growth.</li>
                         </ul>
                     </div>
-                    <div className='md:bg-[url("/Images/Home/resources.png")] bg-no-repeat w-full min-h-[600px] bg-center bg-cover relative'>
+                    <div className='md:bg-[url("/Images/Home/Resources.png")] bg-no-repeat w-full min-h-[600px] bg-center bg-cover relative'>
                         {/* <img src="/Images/Home/resources.png" alt="" /> */}
                         <div className='md:absolute bottom-0 grid md:grid-cols-3 grid-cols-2 gap-3' >
                             <div className='bg-white p-5 shadow rounded-lg'>

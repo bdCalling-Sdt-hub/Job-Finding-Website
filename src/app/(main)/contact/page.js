@@ -75,7 +75,7 @@ const Page = () => {
             <div className="flex items-center justify-center md:justify-end">
                 <img
                     className="w-4/5 md:w-3/5"
-                    src="/Images/contact/ContactPage.png"
+                    src="/Images/Contact/ContactPage.png"
                     alt="Contact"
                 />
             </div>

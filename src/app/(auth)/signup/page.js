@@ -13,9 +13,9 @@ const Page = () => {
 
     return (
         <div className='h-screen bg-gradient-to-b from-[#f9f5ff] to-[#b6a7ca]'>
-            <div>
+            <Link href="/">
                 <img className='md:pl-10 pt-10  md:w-60 w-48 mx-auto md:ml-0' src="/Images/Auth/logo2.png" alt="" />
-            </div>
+            </Link>
             <div className='flex justify-center mt-20'>
                 <div className='min-w-80'>
                     <h2 className='text-3xl font-medium text-center'>Sign Up</h2>
