@@ -140,14 +140,14 @@ const SearchJob = () => {
                                     {
                                         index === 1 && (
                                             <div className="mt-5 hidden md:flex items-center justify-center">
-                                                <Link href="/companies" className="px-10  duration-500  py-3 w-full md:w-auto  border border-[#7ed957] cursor-pointer  rounded-full bg-[#7ed957] text-white transition font-medium shadow-sm">All Companies</Link>
+                                                <Link href="/companies" className="px-10 text-center duration-500  py-3   md:w-auto  border border-[#7ed957] cursor-pointer rounded-full bg-[#7ed957] text-white transition font-medium shadow-sm  ">All Companies</Link>
                                             </div>
                                         )
                                     }
                                     {
                                         index === 2 && (
                                             <div className="mt-5 flex md:hidden items-center justify-center">
-                                                <Link href="/companies" className="px-10 duration-500  py-3 w-full md:w-auto  border border-[#7ed957] cursor-pointer  rounded-full bg-[#7ed957] text-white transition font-medium shadow-sm">All Companies</Link>
+                                                <Link href="/companies" className="px-10 duration-500  py-3 w-full md:w-auto  border border-[#7ed957] cursor-pointer text-center rounded-full bg-[#7ed957] text-white transition font-medium shadow-sm">All Companies</Link>
                                             </div>
                                         )
                                     }
@@ -187,7 +187,7 @@ const SearchJob = () => {
                                     {
                                         index === 2 && (
                                             <div className="mt-5 flex md:hidden items-center justify-center">
-                                                <Link href="/companies" className="px-10 duration-500  py-3 w-full md:w-auto  border border-[#7ed957] cursor-pointer  rounded-full bg-[#7ed957] text-white transition font-medium shadow-sm">All Companies</Link>
+                                                <Link href="/companies" className="px-10 duration-500  py-3 w-full md:w-auto  border border-[#7ed957] text-center cursor-pointer  rounded-full bg-[#7ed957] text-white transition font-medium shadow-sm">All Companies</Link>
                                             </div>
                                         )
                                     }

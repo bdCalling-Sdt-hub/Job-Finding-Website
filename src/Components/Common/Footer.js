@@ -35,8 +35,8 @@ const Footer = () => {
                 <div>
                     <h3 className="text-lg font-semibold mb-3">For Companies</h3>
                     <ul className="space-y-2">
-                        <li className="text-sm flex items-center gap-2 my-5 cursor-pointer hover:gap-4 duration-300"> <FaChevronRight /> Why Karma</li>
-                        <li className="text-sm flex items-center gap-2 my-5 cursor-pointer hover:gap-4 duration-300"> <FaChevronRight /> Explore Companies</li>
+                        <Link href="/why-karma" className="text-sm flex items-center gap-2 my-5 cursor-pointer hover:gap-4 duration-300"> <FaChevronRight /> Why Karma</Link>
+                        <Link href="/companies" className="text-sm flex items-center gap-2 my-5 cursor-pointer hover:gap-4 duration-300"> <FaChevronRight /> Explore Companies</Link>
                         <li className="text-sm flex items-center gap-2 my-5 cursor-pointer hover:gap-4 duration-300"> <FaChevronRight /> Pricing</li>
 
                     </ul>
@@ -45,9 +45,9 @@ const Footer = () => {
                 <div>
                     <h3 className="text-lg font-semibold mb-3">For Job Seekers</h3>
                     <ul className="space-y-2">
-                        <li className="text-sm flex items-center gap-2 my-5 cursor-pointer hover:gap-4 duration-300"> <FaChevronRight /> Browse Jobs</li>
+                        <Link href="/jobs" className="text-sm flex items-center gap-2 my-5 cursor-pointer hover:gap-4 duration-300"> <FaChevronRight /> Browse Jobs</Link>
                         <Link href="/contact" className="text-sm flex items-center gap-2 my-5 cursor-pointer hover:gap-4 duration-300"> <FaChevronRight /> Contact Us</Link>
-                        <li className="text-sm flex items-center gap-2 my-5 cursor-pointer hover:gap-4 duration-300"> <FaChevronRight /> Resources</li>
+                        <Link href="/resources" className="text-sm flex items-center gap-2 my-5 cursor-pointer hover:gap-4 duration-300"> <FaChevronRight /> Resources</Link>
                         <Link href="/networking-events" className="text-sm flex items-center gap-2 my-5 cursor-pointer hover:gap-4 duration-300"> <FaChevronRight />Networking Events</Link>
                     </ul>
                 </div>

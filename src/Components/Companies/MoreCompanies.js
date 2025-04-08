@@ -126,7 +126,7 @@ const MoreCompanies = () => {
             </div>
 
             <div className="mt-5 flex items-center justify-center">
-                <Link href="/companies/all-companies" className="px-10 duration-500  py-3 w-full md:w-auto  border border-[#553283] cursor-pointer  rounded-full bg-[#553283] text-white transition font-medium shadow-sm">All Companies</Link>
+                <Link href="/companies/all-companies" className="px-10 text-center duration-500 py-3 w-full md:w-auto  border border-[#553283] cursor-pointer  rounded-full bg-[#553283] text-white transition font-medium shadow-sm">All Companies</Link>
             </div>
 
 
