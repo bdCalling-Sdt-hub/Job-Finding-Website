@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import React, { useState, useRef } from 'react';
 import { CiLinkedin } from 'react-icons/ci';
-import { FaInstagram, FaRegCopy } from 'react-icons/fa';
+import { FaChevronLeft, FaChevronRight, FaInstagram, FaRegCopy } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import { RiFacebookBoxLine } from 'react-icons/ri';
 
@@ -95,15 +95,15 @@ const Page = () => {
                 <div className="flex justify-center mt-4 gap-5">
                     <button
                         onClick={() => swiperRef.current.swiper.slidePrev()}  // Go to previous slide
-                        className="cursor-pointer py-2 px-4 bg-[#7ed957] text-white rounded-md hover:bg-[#6bb944]"
+                        className="cursor-pointer  p-4 bg-[#7ed957] text-white rounded-md hover:bg-[#6bb944]"
                     >
-                        Prev
+                        <FaChevronLeft className='text-2xl' />
                     </button>
                     <button
                         onClick={() => swiperRef.current.swiper.slideNext()}  // Go to next slide
-                        className="cursor-pointer py-2 px-4 bg-[#7ed957] text-white rounded-md hover:bg-[#6bb944]"
+                        className="cursor-pointer p-4 bg-[#7ed957] text-white rounded-md hover:bg-[#6bb944]"
                     >
-                        Next
+                        <FaChevronRight className='text-2xl' />
                     </button>
                 </div>
             </div>
