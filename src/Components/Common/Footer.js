@@ -1,6 +1,6 @@
 import React from "react";
 import { FaChevronRight } from "react-icons/fa";
-import { AiOutlineFacebook } from "react-icons/ai"; 
+import { AiOutlineFacebook } from "react-icons/ai";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import Link from "next/link";
