@@ -140,7 +140,7 @@ const Page = () => {
                 <h2 className='md:text-3xl text-2xl font-semibold  my-5'>More Companies</h2>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-5 md:gap-10">
                     {paginatedCompanies.map((company) => (
-                        <div key={company.id}>
+                        <Link href={'/companies/profile/jobs'} key={company.id}>
                             <div className="p-5 border border-[#6a40a1] rounded-xl h-full">
                                 <div className="relative mb-5">
                                     <img className="w-full" src={company.image} alt={company.name} />
@@ -154,7 +154,7 @@ const Page = () => {
                                 <p className=" text-[#2b2b2b6e]">{company.description}</p>
                                 <Link href={`/companies/profile`} className="mt-3 inline-block text-[#7ed957] border border-[#7ed957] cursor-pointer hover:bg-[#7ed957] hover:text-white transition px-8 py-3 rounded-md font-semibold">Follow</Link>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
 

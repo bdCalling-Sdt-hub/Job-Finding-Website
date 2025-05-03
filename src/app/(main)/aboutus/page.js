@@ -46,7 +46,7 @@ const Page = () => {
                             </svg>
                         </div>
                         <div>
-                            <span className='text-sm text-left text-gray-500' >Job Posts</span>
+                            <span className='text-sm text-left text-gray-500' >Companies</span>
                             <h3 className='text-2xl font-semibold'>1,200+</h3>
                         </div>
                     </div>
@@ -55,7 +55,7 @@ const Page = () => {
                             <img src="/Images/about/File_dock_search_light.png" alt="" />
                         </div>
                         <div>
-                            <span className='text-sm text-left text-gray-500'>Job Posts</span>
+                            <span className='text-sm text-left text-gray-500'>Applications</span>
                             <h3 className='text-2xl font-semibold'>1,200+</h3>
                         </div>
                     </div>

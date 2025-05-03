@@ -15,6 +15,8 @@ import { IoAnalyticsSharp } from 'react-icons/io5';
 import FoundingTeam from '@/Components/Companies/Profile/FoundingTeam';
 import Testomonial from '@/Components/Companies/Profile/Testomonial';
 import SliderWithVideoThumbnail from '@/Components/Companies/Profile/SliderWithVideoTubmnail';
+import JobsSlider from '@/Components/Companies/Profile/JobsSlider';
+import CompanyInfo from '@/Components/Companies/Profile/CompanyInfo';
 
 const Page = () => {
     // State to track current image index
@@ -132,9 +134,11 @@ const Page = () => {
                 </div>
             </div>
 
+            <JobsSlider />
+            <CompanyInfo />
+
             <FoundingTeam />
             <Testomonial />
-
             <SliderWithVideoThumbnail />
 
 

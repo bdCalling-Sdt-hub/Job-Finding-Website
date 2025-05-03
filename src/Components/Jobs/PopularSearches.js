@@ -5,7 +5,7 @@ import { CiLocationOn } from "react-icons/ci";
 import { FaRegBookmark } from 'react-icons/fa';
 import { PiBagSimpleThin } from "react-icons/pi";
 import { TbBrandGoogleAnalytics } from "react-icons/tb";
-const tabs = ['Featured', 'IT Company', 'Marketing', 'Retail'];
+const tabs = ['Featured', 'IT Company', 'Marketing', 'Finance'];
 
 const tabData = {
     Featured: [
@@ -21,7 +21,7 @@ const tabData = {
         { id: 1, title: 'GrowthGenius', description: 'Results-driven digital marketing.' },
         { id: 2, title: 'BrandBooster', description: 'We amplify your business.' }
     ],
-    Retail: [
+    Finance: [
         { id: 1, title: 'StyleHub', description: 'Trendy and affordable fashion.' },
         { id: 2, title: 'HomeNest', description: 'Quality home essentials at your doorstep.' }
     ],
@@ -53,7 +53,7 @@ const PopularSearches = () => {
             {/* Tab Content */}
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 ">
                 {tabData[activeTab]?.map((item) => (
-                    <div key={item.id} className="p-4 border border-[#553283] bg-white shadow rounded-lg">
+                    <Link href="/jobs/details/1" key={item.id} className="p-4 border border-[#553283] bg-white shadow rounded-lg">
                         <div className='relative'>
                             <img className='w-full' src="/Images/Jobs/PopulerSearch/popujerjobSwarch.png" alt="" />
                             <span className='cursor-pointer absolute w-12 h-12 flex items-center justify-center rounded-full -bottom-4 right-4 border-2 border-[#553283] bg-[#eadaff] text-[#553283]'><FaRegBookmark /></span>
@@ -64,13 +64,13 @@ const PopularSearches = () => {
                             <h3 className="text-2xl font-semibold text-primary">{item.title}</h3>
                             <p className="text-gray-600 flex items-center gap-3"><CiLocationOn />Dhaka, Bangladesh</p>
                             <p className="text-gray-600 flex items-center gap-3"><PiBagSimpleThin />Full-Time</p>
-                            <p className="text-gray-600 flex items-center gap-3"><TbBrandGoogleAnalytics />Dhaka, Bangladesh</p>
+                            <p className="text-gray-600 flex items-center gap-3"><TbBrandGoogleAnalytics />Executive Level</p>
                             <div className='mt-3 flex justify-between items-center'>
                                 <p>Posted: 3 Days Ago</p>
                                 <Link href={'/jobs/details/1'} className='py-3 cursor-pointer px-8 font-semibold text-[#553283] border-2 rounded-lg border-[#553283] hover:bg-[#553283] hover:text-white duration-500  '>Apply Now</Link>
                             </div>
                         </div>
-                    </div>
+                    </Link>
                 ))}
             </div>
 

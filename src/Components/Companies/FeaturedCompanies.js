@@ -44,13 +44,13 @@ const FeaturedCompanies = () => {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-5 md:gap-10 ">
                 {companies?.map((company, index) => (
-                    <div key={company.id} className="">
+                    <Link href={'/companies/profile'} key={company.id} className="">
                         <div className="p-5 border border-[#6a40a1] rounded-xl h-full">
                             <div className="relative mb-5">
                                 <img className="w-full" src={company.image} alt={company.name} />
-                                <span className="absolute -bottom-6 right-8 bg-[#f5eff7] px-8 py-3 rounded-md text-[#553283]">
+                                <Link href={'/companies/profile/jobs'} className="absolute -bottom-6 right-8 bg-[#f5eff7] px-8 py-3 rounded-md text-[#553283]">
                                     {company.jobs} Jobs
-                                </span>
+                                </Link>
                             </div>
                             <h2 className="text-xl font-medium">{company.name}</h2>
                             <p className="text-gray-800 flex items-center gap-2 my-5"><FaMapMarkerAlt />{company.location}</p>
@@ -63,7 +63,7 @@ const FeaturedCompanies = () => {
 
 
 
-                    </div>
+                    </Link>
                 ))}
 
             </div>

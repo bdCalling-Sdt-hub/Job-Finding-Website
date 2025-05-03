@@ -1,10 +1,11 @@
+import Link from 'next/link';
 import React from 'react';
 import { LuCheck } from "react-icons/lu";
 
 const CareerInsights = () => {
     return (
         <div className="w-[90%] mx-auto py-10 ">
-            <h2 className='text-4xl font-semibold text-primary mb-6 text-center border-b border-gray-500 pb-5'>Career Insights for Job Seekers</h2>
+            <Link href="/resources" className='block text-4xl font-semibold text-primary mb-6 text-center border-b border-gray-500 pb-5'>Career Insights for Job Seekers</Link>
 
             <div className='grid grid-cols-1 md:grid-cols-2 gap-10 items-center'>
                 <div>

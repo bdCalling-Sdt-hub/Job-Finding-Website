@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const WeOffers = () => {
@@ -10,28 +11,28 @@ const WeOffers = () => {
                 <div className="grid md:grid-cols-2 xl:grid-cols-3 md:gap-10 gap-5 py-10">
                     <div className='space-y-5'>
                         <div className='text-center bg-white shadow rounded-xl py-10 min-h-[150px] flex items-center justify-center'>
-                            <p>Curated Job <br />
+                            <p className='text-xl font-medium'>Curated Job <br />
                                 Opportunities</p>
                         </div>
-                        <div>
+                        <Link className='block' href="/jobs">
                             <img className='w-full' src="/Images/Home/weoffer-1.png" alt="" />
-                        </div>
+                        </Link>
                     </div>
                     <div className='space-y-5'>
-                        <div>
+                        <Link className='block' href="/companies">
                             <img className='w-full' src="/Images/Home/weoffer-2.png" alt="" />
-                        </div>
+                        </Link>
                         <div className='text-center bg-white shadow rounded-xl py-10 min-h-[150px] flex items-center justify-center'>
-                            <p>Company Insights</p>
+                            <p className='text-xl font-medium'>Company Insights</p>
                         </div>
                     </div>
                     <div className='space-y-5'>
                         <div className='text-center bg-white shadow rounded-xl py-10 min-h-[150px] flex items-center justify-center'>
-                            <p>Career Resources</p>
+                            <p className='text-xl font-medium'>Career Resources</p>
                         </div>
-                        <div>
+                        <Link className='block' href="/resources">
                             <img className='w-full' src="/Images/Home/weoffer-3.png" alt="" />
-                        </div>
+                        </Link>
                     </div>
                 </div>
             </div>

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import { FaCheck } from 'react-icons/fa';
 
@@ -24,19 +25,19 @@ const Resources = () => {
                                 <span className='bg-[#f4edff] text-[#6836b8] font-semibold p-2 rounded-lg'>Featured</span>
                                 <h2 className='my-5 text-xl'>The Ultimate Guide to Acing Interviews</h2>
                                 <p className='text-[#bbb]'>Stand out from the competition with confidence.</p>
-                                <button className='mt-5 p-2 px-5 w-full rounded-lg text-[#7ed957] border broder-[#7ed957]'>View Article</button>
+                                <Link href="/blog/1" className='mt-5 inline-block text-center p-2 px-5 w-full rounded-lg text-[#7ed957] border broder-[#7ed957]'>View Article</Link>
                             </div>
                             <div className='bg-white p-5 shadow rounded-lg'>
                                 <span className='bg-[#f4edff] text-[#6836b8] font-semibold p-2 rounded-lg'>Featured</span>
                                 <h2 className='my-5 text-xl'>Top 5 Skills Every Professional Needs in 2025</h2>
                                 <p className='text-[#bbb]'>Stay competitive by mastering the skills that matter most.</p>
-                                <button className='mt-5 p-2 px-5 w-full rounded-lg text-[#7ed957] border broder-[#7ed957]'>View Article</button>
+                                <Link href="/blog/1" className='mt-5 inline-block text-center p-2 px-5 w-full rounded-lg text-[#7ed957] border broder-[#7ed957]'>View Article</Link>
                             </div>
                             <div className='bg-white p-5 shadow rounded-lg'>
                                 <span className='bg-[#f4edff] text-[#6836b8] font-semibold p-2 rounded-lg'>Featured</span>
                                 <h2 className='my-5 text-xl'>How to Build a Winning Personal Brand</h2>
                                 <p className='text-[#bbb]'>Craft an authentic professional image that opens doors.</p>
-                                <button className='mt-5 p-2 px-5 w-full rounded-lg text-[#7ed957] border broder-[#7ed957]'>View Article</button>
+                                <Link href="/blog/1" className='inline-block text-center mt-5 p-2 px-5 w-full rounded-lg text-[#7ed957] border broder-[#7ed957]'>View Article</Link>
                             </div>
                         </div>
                     </div>

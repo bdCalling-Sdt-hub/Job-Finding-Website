@@ -124,7 +124,7 @@ const Page = () => {
                                     <PiBagSimpleThin /> Full-Time
                                 </p>
                                 <p className="text-gray-600 flex items-center gap-3">
-                                    <TbBrandGoogleAnalytics /> Dhaka, Bangladesh
+                                    <TbBrandGoogleAnalytics /> Executive Level
                                 </p>
                                 <div className="mt-3 flex justify-between items-center">
                                     <p>Posted: 3 Days Ago</p>
