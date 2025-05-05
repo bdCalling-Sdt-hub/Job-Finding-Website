@@ -16,7 +16,7 @@ const UserProfileInfo = () => {
                 {/* Right side: Personal Information */}
                 <div className="flex flex-col space-y-4">
                     <h2 className="text-2xl font-semibold">Personal Information</h2>
-
+                    {/* sdf */}
                     <div className="flex space-x-4">
                         <div className="flex flex-col">
                             <span className="font-medium text-gray-600">Full Name</span>
@@ -38,7 +38,7 @@ const UserProfileInfo = () => {
                     </div>
 
                     <div className="border-l-2 border-gray-300 h-24 mx-4"></div>
-                
+
                     <div className="flex space-x-4">
 
                         <div className="flex flex-col">
