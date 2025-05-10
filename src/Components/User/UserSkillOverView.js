@@ -11,7 +11,7 @@ const UserSkillOverView = () => {
             {/* Grid Layout Section */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {/* Left Column */}
-                <div className="space-y-6">
+                <div className=" space-y-8 md:border-r-2 border-gray-200">
 
                     <div>
                         <h2>What are the three most important factors you look for in a new job?</h2>
@@ -24,10 +24,9 @@ const UserSkillOverView = () => {
                             </div>
                         </div>
                     </div>
-
                     <div>
                         <div>
-                            <h2>Preferred Work Location:</h2>
+                            <h2>Company Size Preference:</h2>
                         </div>
                         <div className="flex flex-wrap gap-2 mt-3">
                             <div className="bg-[#dcf8d2] text-[#7ed957] border-2 border-[#7ed957] py-4 px-6 rounded-full text-sm font-semibold">
@@ -40,9 +39,9 @@ const UserSkillOverView = () => {
                     </div>
                     <div>
                         <div>
-                            <h2>Preferred Work Location:</h2>
+                            <h2>Languages for Work (Excluding English):</h2>
                         </div>
-                        <div className="flex flex-wrap gap-2">
+                        <div className="flex flex-wrap gap-2 mt-3">
                             <div className="bg-[#dcf8d2] text-[#7ed957] border-2 border-[#7ed957] py-4 px-6 rounded-full text-sm font-semibold">
                                 Limassol
                             </div>
@@ -54,9 +53,9 @@ const UserSkillOverView = () => {
 
                     <div>
                         <div>
-                            <h2>Preferred Work Location:</h2>
+                            <h2>Preferred Job Roles:</h2>
                         </div>
-                        <div className="flex flex-wrap gap-2">
+                        <div className="flex flex-wrap gap-2 mt-3">
                             <div className="bg-[#dcf8d2] text-[#7ed957] border-2 border-[#7ed957] py-4 px-6 rounded-full text-sm font-semibold">
                                 Software Engineering
                             </div>
@@ -68,9 +67,9 @@ const UserSkillOverView = () => {
 
                     <div>
                         <div>
-                            <h2>Preferred Work Location:</h2>
+                            <h2>Industry Interests:</h2>
                         </div>
-                        <div className="flex flex-wrap gap-2">
+                        <div className="flex flex-wrap gap-2 mt-3">
                             <div className="bg-[#dcf8d2] text-[#7ed957] border-2 border-[#7ed957] py-4 px-6 rounded-full text-sm font-semibold">
                                 B2C
                             </div>
@@ -84,9 +83,9 @@ const UserSkillOverView = () => {
                     </div>
                     <div>
                         <div>
-                            <h2>Preferred Work Location:</h2>
+                            <h2>Pronouns:</h2>
                         </div>
-                        <div className="flex flex-wrap gap-2">
+                        <div className="flex flex-wrap gap-2 mt-3">
                             <div className="bg-[#dcf8d2] text-[#7ed957] border-2 border-[#7ed957] py-4 px-6 rounded-full text-sm font-semibold">
                                 She/Her
                             </div>
@@ -95,10 +94,10 @@ const UserSkillOverView = () => {
                 </div>
 
                 {/* Middle Column */}
-                <div className="space-y-6">
+                <div className="space-y-8 md:border-r-2 border-gray-200">
                     <div>
-                        <h2>What are the three most important factors you look for in a new job?</h2>
-                        <div className="flex flex-wrap gap-2">
+                        <h2>Preferred Work Location:</h2>
+                        <div className="flex flex-wrap gap-2 mt-3">
                             <div className="bg-[#dcf8d2] text-[#7ed957] border-2 border-[#7ed957] py-4 px-6 rounded-full text-sm font-semibold">
                                 Limassol
                             </div>
@@ -107,12 +106,23 @@ const UserSkillOverView = () => {
                             </div>
                         </div>
                     </div>
+                    <div>
+                        <div>
+                            <h2>Remote Work Location:</h2>
+                        </div>
+                        <div className="flex flex-wrap gap-2 mt-3" >
+                            <div className="bg-[#dcf8d2] text-[#7ed957] border-2 border-[#7ed957] py-4 px-6 rounded-full text-sm font-semibold">
+                                Other EMEA location
+                            </div>
+                        </div>
+                    </div>
 
                     <div>
                         <div>
-                            <h2>Preferred Work Location:</h2>
+                            <h2>Job Start Timeframe:
+                            </h2>
                         </div>
-                        <div className="flex flex-wrap gap-2">
+                        <div className="flex flex-wrap gap-2 mt-3">
                             <div className="bg-[#dcf8d2] text-[#7ed957] border-2 border-[#7ed957] py-4 px-6 rounded-full text-sm font-semibold">
                                 ASAP
                             </div>
@@ -121,9 +131,9 @@ const UserSkillOverView = () => {
 
                     <div>
                         <div>
-                            <h2>Preferred Work Location:</h2>
+                            <h2>Desired Role Level (select up to 2):</h2>
                         </div>
-                        <div className="flex flex-wrap gap-2">
+                        <div className="flex flex-wrap gap-2 mt-3">
                             <div className="bg-[#dcf8d2] text-[#7ed957] border-2 border-[#7ed957] py-4 px-6 rounded-full text-sm font-semibold">
                                 Junior (1-2 years)
                             </div>
@@ -132,9 +142,10 @@ const UserSkillOverView = () => {
 
                     <div>
                         <div>
-                            <h2>Preferred Work Location:</h2>
+                            <h2>Preferred Technologies:
+                            </h2>
                         </div>
-                        <div className="flex flex-wrap gap-2">
+                        <div className="flex flex-wrap gap-2 mt-3">
                             <div className="bg-[#dcf8d2] text-[#7ed957] border-2 border-[#7ed957] py-4 px-6 rounded-full text-sm font-semibold">
                                 Notion
                             </div>
@@ -147,30 +158,47 @@ const UserSkillOverView = () => {
                 </div>
 
                 {/* Right Column */}
-                <div className="space-y-6">
+                <div className="space-y-8 ">
                     <div>
-                        <h2>Preferred Work Location:</h2>
-                    </div>
-                    <div className="flex flex-wrap space-y-3 gap-2">
-                        <div className="bg-[#dcf8d2] text-[#7ed957] border-2 border-[#7ed957] py-4 px-6 rounded-full text-sm font-semibold">
-                            No
+
+                        <div>
+                            <h2>Visa Requirement for Current Location:</h2>
+                        </div>
+                        <div className="flex flex-wrap space-y-3 gap-2 mt-3">
+                            <div className="bg-[#dcf8d2] text-[#7ed957] border-2 border-[#7ed957] py-4 px-6 rounded-full text-sm font-semibold">
+                                No
+                            </div>
                         </div>
                     </div>
-                    <div className="flex flex-wrap gap-2">
-                        <div className="bg-[#dcf8d2] text-[#7ed957] border-2 border-[#7ed957] py-4 px-6 rounded-full text-sm font-semibold">
-                            Other EMEA location
+
+                    <div>
+                        <div>
+                            <div>
+                                <h2>Minimum Expected Yearly Salary (€):</h2>
+                            </div>
+
+                            <div className="flex flex-wrap gap-2 mt-3">
+                                <div className="bg-[#dcf8d2] text-[#7ed957] border-2 border-[#7ed957] py-4 px-6 rounded-full text-sm font-semibold">
+                                    24k
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div className="flex flex-wrap gap-2">
-                        <div className="bg-[#dcf8d2] text-[#7ed957] border-2 border-[#7ed957] py-4 px-6 rounded-full text-sm font-semibold">
-                            24k
+                    <div>
+                        <div>
+                            <h2>Gender:</h2>
+                        </div>
+                        <div className="flex flex-wrap gap-2 mt-3">
+                            <div className="bg-[#dcf8d2] text-[#7ed957] border-2 border-[#7ed957] py-4 px-6 rounded-full text-sm font-semibold">
+                                Female
+                            </div>
                         </div>
                     </div>
-                    <div className="flex flex-wrap gap-2">
-                        <div className="bg-[#dcf8d2] text-[#7ed957] border-2 border-[#7ed957] py-4 px-6 rounded-full text-sm font-semibold">
-                            Female
+                    <div>
+                        <div>
+                            <h2>Ethnicity:</h2>
                         </div>
-                        <div className="bg-[#dcf8d2] text-[#7ed957] border-2 border-[#7ed957] py-4 px-6 rounded-full text-sm font-semibold">
+                        <div className="bg-[#dcf8d2] mt-3 w-auto inline-block text-[#7ed957] border-2 border-[#7ed957] py-4 px-6 rounded-full text-sm font-semibold">
                             Asian
                         </div>
                     </div>
