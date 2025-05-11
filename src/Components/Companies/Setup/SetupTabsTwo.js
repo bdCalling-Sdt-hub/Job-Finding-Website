@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Form, Input, Upload, Button, message } from 'antd';
 import { InboxOutlined } from '@ant-design/icons';
+import { toast, ToastContainer } from 'react-toastify';
 
 const { Dragger } = Upload;
 
@@ -67,10 +68,13 @@ const SetupTabsTwo = () => {
 
     const handleSubmit = (values) => {
         console.log('Form values:', values);
+        console.log('Cultural Activities Files:', overviewFile);
+        toast.success('Job added successfully');
     };
 
     return (
         <div className="lg:p-6">
+            <ToastContainer theme='colored' />
             <Form name="basic" onFinish={handleSubmit} layout="vertical">
                 {/* Overview and Picture side-by-side */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

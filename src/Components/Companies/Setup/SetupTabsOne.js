@@ -1,8 +1,10 @@
+'use client';
 import React, { useState } from 'react';
 import { Form, Upload, Button, message, Tooltip, Input } from 'antd';
 import { UploadOutlined, DeleteOutlined } from '@ant-design/icons';
 import { CiLocationOn } from 'react-icons/ci';
 import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { toast, ToastContainer } from 'react-toastify';
 
 const SetupTabsOne = () => {
     // State to handle file list for Logo and Cover Photo
@@ -103,6 +105,8 @@ const SetupTabsOne = () => {
 
     const handleAllSubmit = (values) => {
 
+        toast.success('Job added successfully');
+
         console.log(values);
 
 
@@ -111,6 +115,7 @@ const SetupTabsOne = () => {
 
     return (
         <div className="lg:p-6">
+            <ToastContainer theme='colored' />
             <Form layout="vertical" onFinish={handleAllSubmit}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {/* Company Logo Upload */}

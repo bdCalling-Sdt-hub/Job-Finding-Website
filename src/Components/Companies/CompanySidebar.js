@@ -59,9 +59,9 @@ const CompanySidebar = () => {
                 className={` md:min-w-[250px]  min-h-screen  md:block ${showMenu ? 'block' : 'hidden'} md:relative`}
             >
                 <div className='fixed top-0 h-screen bg-[#e0f6d7] border-r-2 border-[#553283] p-5'>
-                    <div>
+                    <Link href='/'>
                         <img className='w-48 mx-auto' src='/Images/Auth/logo2.png' alt='Company Logo' />
-                    </div>
+                    </Link>
 
                     <ul className='space-y-2 mt-10'>
                         <Link
