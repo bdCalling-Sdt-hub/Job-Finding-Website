@@ -5,6 +5,7 @@ import { MdLocationOn, MdOutlineHomeWork } from 'react-icons/md';
 import { RiUserFollowLine } from 'react-icons/ri';
 import { GrLocation } from 'react-icons/gr';
 import { CiCalendar } from 'react-icons/ci';
+import Link from 'next/link';
 
 const MyCompanyDetails = () => {
     return (
@@ -69,9 +70,9 @@ const MyCompanyDetails = () => {
                             <p className="text-2xl font-bold">Karma International</p>
                             <p className="text-sm text-gray-500">Company Name</p>
                         </div>
-                        <button className="bg-[#5d3395] text-white px-6 py-2 cursor-pointer rounded-md hover:bg-[#4b267d]">
+                        <Link href="/company/setup" className="bg-[#5d3395] text-white px-6 py-2 cursor-pointer rounded-md hover:bg-[#4b267d]">
                             Edit
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </div>

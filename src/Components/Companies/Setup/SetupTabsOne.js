@@ -102,10 +102,10 @@ const SetupTabsOne = () => {
 
 
     const handleAllSubmit = (values) => {
-        
+
         console.log(values);
 
-        
+
     };
 
 
